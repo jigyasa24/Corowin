@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SelfDiagnosis"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/button_two"
+        android:text="Self Diagnosis"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#00a2d8"
+        android:text="We hope that you are in perfect health, but it is vital to keep a tab on certain health conditions while staying in home isolation. It will help you determine whether you are in high risk or low risk and if you should get hospitalised.\n\nThis is just an attempt to ensure that you get the right help at the right time."/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="*Please fill the answers below"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="1. Please enter your Blood oxygen level:"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="(If you do not own an Oxymeter, we would suggest that you buy one as soon as possible.) "/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/oxygen"
+        android:inputType="number"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="Oxygen level"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textColorHint="#736A6A"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="2. Pulse rate range:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="(If checked recently) "/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pulse"
+        android:inputType="number"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="Pulse Rate"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textColorHint="#736A6A"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="3. Did you have fever today?"/>
+
+    <RadioGroup
+        android:id="@+id/fever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/feveryes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:text="Yes" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/feverno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="4. Do you have difficulty in breathing?"/>
+
+    <RadioGroup
+        android:id="@+id/breathe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/breathingyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:text="Yes" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/breathingno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="5. Do you have Cough or sore throat?"/>
+
+    <RadioGroup
+        android:id="@+id/cough"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/soreyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:text="Yes" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/soreno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="No" />
+    </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="6. Do you have Chest pain?"/>
+
+            <RadioGroup
+                android:id="@+id/pain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/painyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Yes" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/painno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="7. Did you have more than 4 loose motions in a day?"/>
+
+            <RadioGroup
+                android:id="@+id/motion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fouryes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Yes" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/fourno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SubmitSelfDiagnosis"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_two"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

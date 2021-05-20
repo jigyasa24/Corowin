@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".SearchActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_two"
+        android:text="Search for medical aid"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="These are unprecedented times, and the world is in a disarray right now. As this is a large scale crisis, the resources to fight it are also geting scarce with the increasing demand.\n\nWe have collected numerous resources of many medical aids as per availability, the sources have all been verified by us. You need to enter the name of your city and we will show you a list of the details of all the distributors who can assist you in acquiring them."
+        android:textColor="#00a2d8"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="15dp"
+        android:hint="Enter your city name"
+        android:id="@+id/editText" />
+
+    <Button
+        android:id="@+id/buttonfetch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:background="@drawable/button_two"
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

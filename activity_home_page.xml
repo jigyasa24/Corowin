@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="115dp"
+        android:background="@drawable/corovir"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="240dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:backgroundTint="#00a2d8"
+        android:text="Welcome"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:layout_marginTop="-150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What would you like to do?"
+        android:textAlignment="center"
+        android:textColor="#007800"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_shape"
+        android:text="Search for medical aid"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/Self"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape"
+        android:text="Self Diagnosis"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#007800"
+        android:text="Instructions for the patient"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="i. Patient must isolate himself from other household members, stay in the identified room and away from other people in home, especially elder lies and those with co-morbid conditions like hypertension, cardiovascular disease, renal disease etc.
+        \n\nii. The patient should be kept in a well-ventilated room with cross ventilation and windows should be kept open to allow fresh air to come in.
+        \n\niii. Patient should at all times use triple layer medical mask. Discard mask after 8 hours of use or earlier if they become wet or visibly soiled. In the event of care giver entering the room, both care giver and patient may consider using N 95 mask.
+        \n\niv. Mask should be discarded only after disinfecting it with 1% Sodium Hypochlorite.
+        \n\nv. Patient must take rest and drink lot of fluids to maintain adequate hydration.
+        \n\nvi. Follow respiratory etiquettes at all times.
+        \n\nvii. Frequent hand washing with soap and water for at least 40 seconds or clean with alcohol-based sanitizer.
+        \n\nviii. Don’t share personal items with other people in the household.
+        \n\nix. Ensure cleaning of surfaces in the room that are touched often (tabletops, doorknobs, handles, etc.) with 1% hypochlorite solution.
+        \n\nx. Self-monitoring of blood oxygen saturation with a pulse oximeter is strongly advised.
+        \n\nxi. The patient will self-monitor his/her health with daily temperature monitoring and report promptly if any deterioration of symptom as given below is noticed.
+    "/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#007800"
+                android:text="Instructions for the Caregivers"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="i. Mask:\n\to The caregiver should wear a triple layer medical mask. N95 mask may be considered when in the same room with the ill person.
+\n\to Front portion of the mask should not be touched or handled during use.
+\n\to If the mask gets wet or dirty with secretions, it must be changed immediately.
+\n\to Discard the mask after use and perform hand hygiene after disposal of the mask.
+\n\to He/she should avoid touching own face, nose or mouth.
+\n\nii. Hand hygiene
+\n\to Hand hygiene must be ensured following contact with ill person or his immediate environment.
+\n\to Hand hygiene should also be practiced before and after preparing food, before eating, after using the toilet, and whenever hands look dirty.
+\n\to Use soap and water for hand washing at least for 40 seconds. Alcohol-based hand rub can be used, if hands are not visibly soiled.
+\n\to After using soap and water, use of disposable paper towels to dry hands is desirable. If not available, use dedicated clean cloth towels and replace them when they become wet.
+\n\to Perform hand hygiene before and after removing gloves.
+\n\niii. Exposure to patient/patient’s environment
+\n\to Avoid direct contact with body fluids of the patient, particularly oral or respiratory secretions. Use disposable gloves while handling the patient.
+\n\to Avoid exposure to potentially contaminated items in his immediate environment (e.g. avoid sharing cigarettes, eating utensils, dishes, drinks, used towels or bed linen).
+\n\to Food must be provided to the patient in his room. Utensils and dishes used by the patient should be cleaned with soap/detergent and water wearing gloves. The utensils and dishes may be re-used.
+\n\to Clean hands after taking off gloves or handling used items. Use triple layer medical mask and disposable gloves while cleaning or handling surfaces, clothing or linen used by the patient.
+\n\to Perform hand hygiene before and after removing gloves."/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
